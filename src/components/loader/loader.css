@@ -1,0 +1,30 @@
+.preloader {
+  padding: 10px;
+  margin: 20px auto;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #dddddd;
+  border-top-color: rgb(31, 29, 29);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.pulse {
+  animation: pulse 850ms infinite alternate;
+}
+
+@keyframes pulse {
+  50% {
+      transform: scale(1.2);
+  }
+}
